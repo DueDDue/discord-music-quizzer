@@ -154,14 +154,14 @@ export class MusicQuiz {
         let correct = false
 
         if (!this.titleGuessed && content.includes(song.title.toLowerCase())) {
-            score = score + 2
+            score = score + 3
             this.titleGuessed = true
             correct = true
             await this.reactToMessage(message, '☑')
         }
 
         if (!this.artistGuessed && content.includes(song.artist.toLowerCase())) {
-            score = score + 3
+            score = score + 2
             this.artistGuessed = true
             correct = true
             await this.reactToMessage(message, '☑')
@@ -332,8 +332,8 @@ export class MusicQuiz {
 
         return `
             Guess the song and artist by typing in chat. Points are awarded as follows:
-            > Artist - **3 points**
-            > Title - **2 points**
+            > Artist - **2 points**
+            > Title - **3 points**
             > Artist + title - **5 points**
         `.replace(/  +/g, '')
     }
