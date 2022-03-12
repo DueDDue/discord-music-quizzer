@@ -4,7 +4,8 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "postinstall": "tsc",
+    "tsc": "tsc"
+    "postinstall": "npm run tsc"
     "build": "tsc",
     "start": "tsc && node dist/index.js"
   },
