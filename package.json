@@ -3,13 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
-  "engines": {
-    "node": "12.x"
-  },
   "scripts": {
-    "build": "tsc",
-    "postinstall": "npm run build",
-    "start": "node dist/index.js"
+    "build": "npm run tsc",
+    "tsc": "tsc",
+    "start": "npm run build && node dist/index.js"
   },
   "author": "",
   "license": "ISC",
