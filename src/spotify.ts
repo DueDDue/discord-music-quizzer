@@ -18,7 +18,7 @@ export default class Spotify {
         const result = await this.client.getPlaylistTracks(id) 
         console.log(result)
         if (result.status) {
-            const result = await this.client.getArtistTracks(id)
+            const result = await this.client.getAlbumTracks(id)
             }
     
         return result.body.items.map(({ track }) => track)
