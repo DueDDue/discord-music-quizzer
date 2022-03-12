@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "npm run tsc",
-    "tsc": "tsc",
-    "start": "npm run build && node dist/index.js"
+    "start": "npm run tsc && node dist/index.js",
+    "tsc": "tsc"
   },
   "author": "",
   "license": "ISC",
