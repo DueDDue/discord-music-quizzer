@@ -323,11 +323,11 @@ export class MusicQuiz {
 
     pointText(): string {
         if (this.arguments.only === 'artist') {
-            return 'Guess the artist of the song by typing in chat. When guessed corretly you are awarded **3 points**.'
+            return 'Guess the artist of the song by typing in chat. When guessed corretly you are awarded **2 points**.'
         }
 
         if (this.arguments.only === 'title') {
-            return 'Guess the title of the song by typing in chat. When guessed corretly you are awarded **2 points**.'
+            return 'Guess the title of the song by typing in chat. When guessed corretly you are awarded **3 points**.'
         }
 
         return `
