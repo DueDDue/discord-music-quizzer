@@ -72,8 +72,8 @@ export class MusicQuiz {
 
             ${this.pointText()}
 
-            Type \`${stopCommand}\` to vote for continuing to the next song.
-            Type \`${skipCommand}\` to stop the quiz.
+            Type \`${skipCommand}\` to vote for continuing to the next song.
+            Type \`${stopCommand}\` to stop the quiz.
 
             - GLHF :microphone:
         `.replace(/  +/g, ''))
